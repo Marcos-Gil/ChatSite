@@ -1,0 +1,32 @@
+<!--
+By: Marcos Gil
+Purpose: 404 HTML Page
+-->
+<!doctype html>
+<html>
+	<head>
+		<title>404: File not found</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+<body id = "body404">
+	<div id="header">
+		<h1>Oops!</h1>
+	</div>
+	<div id="content">
+		<h2>We couldn't find the file you were looking for.</h2>
+		<div id="referrerTarget"></div>
+	</div>
+	<script>
+		var target = document.getElementById("referrerTarget");
+	
+		if(document.referrer){
+			
+			target.innerHTML = "<p>You can return to <a href="+document.referrer+">your previous page</a></p>";
+		}
+		else{
+			
+			target.innerHTML = "<p>You should double check the address that you typed, or update your bookmarks.</p>";
+		}
+	</script>
+</body>
+</html>

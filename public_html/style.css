@@ -1,0 +1,57 @@
+/*
+By: Marcos Gil
+Purpose: CSS page
+*/
+
+body{
+	font-family: "Courier New";
+	background-color: #404040;
+}
+
+#inputText, #chatLog{
+	box-shadow: 5px 5px 5px black;
+	color: #bfbfbf;
+	background-color: black;
+	border: solid 1px #009999;
+	width: 100%;
+}		
+
+#inputText{
+	position: relative;
+    top: 10px;
+}
+		
+#chatLog{
+	position: relative;
+    right: 10px;
+    left: 0px;
+	color: #bfbfbf;
+	background-color: black;
+	height: 200px;
+}
+
+#contents{
+	width: 97%;
+	height: 200px;
+}
+
+#chatLogDiv{
+	float: left;
+	width: 90%;
+	height: 100%;
+}
+
+#userListDiv{
+	position: relative;
+    left: 15px;
+	box-shadow: 5px 5px 5px black;
+	color: #bfbfbf;
+	background-color: black;
+	border: solid 1px #009999;
+	height: 100%;
+	overflow: auto;
+}
+
+#body404{
+	color: white;
+}
